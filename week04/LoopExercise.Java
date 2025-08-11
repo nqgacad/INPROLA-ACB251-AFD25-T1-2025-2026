@@ -1,12 +1,23 @@
-// Program to print a text 5 times
+import java.util.Scanner;
 
-class Loop01 {
+class LoopExercise {
   public static void main(String[] args) {
+    Scanner newScanner = new Scanner(System.in);
+  
+    // accepting input from user
+    System.out.print("Enter your starting number: ");
+    int start = newScanner.nextInt();
+    System.out.print("Enter your ending number: ");
+    int end = newScanner.nextInt();
 
-    int n = 5;
     // for loop  
-    for (int i = 1; i <= n; ++i) {
-      System.out.println("Java is fun"+" from: "+i+ " to: "+n);
+    System.out.println("Starting Number is: " + start);  // Output user input
+    System.out.println("Ending Number is: " + end);  // Output user input
+    System.out.println("Even numbers between " + start + " and " + end + ":");
+    for (int i = start; i <= end; i++) {
+      if (i % 2 == 0) {
+        System.out.println(i);
+
     }
   }
 }
